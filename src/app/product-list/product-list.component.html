@@ -1,0 +1,34 @@
+<!-- <p *ngFor="let hero of contacts">{{hero}}</p> -->
+<br><br>
+<br>
+<br>
+<div class="container" *ngIf="productDetailsDesc">
+    <div class="row">
+        <div class="card" style="width: 69rem;">
+          <!-- <a > -->
+            <img  style="    height: 208px;display: inline;margin-left: 200px;
+            width: 183px;" src="{{productDetailsDesc.image}}" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">
+                  
+                  <strong> 
+                      Title: 
+                  </strong> {{productDetailsDesc.category}} - {{productDetailsDesc.title}} <br>
+                  <strong>Rs.  </strong>{{productDetailsDesc.price}}
+                    <br>
+                    <strong>Description:</strong>
+                   <span style="text-align: justify;">{{productDetailsDesc.description}}</span> <br>
+                  
+            </div>
+        <!-- </a> -->
+        <form class="d-flex">
+     
+            <button class="btn btn-primary" type="button">Add to cart</button>
+          </form>
+          <br>
+          </div>
+            
+    </div>
+  
+</div>
+

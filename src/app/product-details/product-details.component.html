@@ -1,0 +1,29 @@
+<!-- <p *ngFor="let hero of contacts">{{hero}}</p> -->
+<br><br>
+<br>
+<br>
+<div class="container">
+  <h2 style="text-align: left;">Sub Categories</h2>
+<br>
+
+    <div class="row">
+        <div class="card" style="width: 18rem;" *ngFor="let hero of productDetails">
+            <a (click)="clickme(hero)"> 
+            <img class="card-img-top" style="height: 150px;width: 150px;display: inline;" src="{{hero.image}}" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">
+                  
+                  <strong> 
+                      Title: 
+                  </strong>{{hero.title}}  <br>
+                  <strong>Rs.  </strong>{{hero.price}}
+                    <br>
+                    <strong>Description:</strong>
+                    <p style="text-align: justify;">{{hero.description}}</p><br>
+                  
+            </div>
+        </a>
+          </div>
+    </div>
+</div>
+

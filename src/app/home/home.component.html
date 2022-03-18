@@ -1,0 +1,24 @@
+<!-- <p *ngFor="let hero of contacts">{{hero}}</p> -->
+<br><br>
+<br>
+<br>
+<div class="container" style="margin-left:200px;">
+  <h1 style="text-align: left;"> Categories</h1>
+  <br>
+  <br>
+  <div class="row" style="align-items: center;">
+
+    <div class="card" style="width: 18rem;border :0px" *ngFor="let hero of contacts">
+      <a (click)="clickme(hero)">
+        <img class="card-img-top" src="assets/bag.png" alt="Card image cap"
+          style="display: inline;height:130px;width: 130px;align-items: center;">
+        <div class="card-body">
+          <p class="card-text" style="text-align: left;font-size: large;color: blue;">
+
+            {{hero}}
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
